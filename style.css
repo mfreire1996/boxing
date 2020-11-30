@@ -5,10 +5,10 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 25px;
   height: 100%;
-  background: #ececec;
+  background: #ffffff;
   color: #2e3131;
 }
 
@@ -40,7 +40,13 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
+
+/* @media only screen and (max-width: 800px) {
+  .parallax {
+  }
+} */
 
 .description {
   text-indent: 5%;
@@ -120,6 +126,18 @@ span {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .slider {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .slider {
+    width: 50%;
+  }
+}
+
 #champ {
   background-image: url("champ.jpg");
   min-height: 500px;
@@ -139,18 +157,18 @@ span {
   clear: both;
 }
 
-.bottom .fa-facebook {
+.bottom .fa-phone {
   position: absolute;
   margin-left: 5%;
 }
 
-.bottom .fa-instagram {
+.bottom .fa-facebook {
   position: absolute;
-  margin-right: 50%;
   margin-left: 50%;
+  margin-right: 50%;
 }
 
-.bottom .fa-phone {
+.bottom .fa-instagram {
   position: absolute;
   margin-left: 90%;
 }
